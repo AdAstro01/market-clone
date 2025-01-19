@@ -1,0 +1,20 @@
+footer {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  padding: 8px;
+  border-top: 1px solid rgb(214, 201, 201);
+  background-color: white;
+}
+/* position과 display:flex; 분리해야 */
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-block__icon {
+  width: 25px;
+  cursor: pointer;
+  /* 마우스 커서 - 손모양의 포인터로 변화 */
+}
