@@ -2,10 +2,17 @@
   position: fixed;
   bottom: 90px;
   right: 30px;
-  background-color:salmon;
+  /* background-color:rgb(250, 128, 114); */
+  background-color: var(--button_color);
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
+  /* hover on button */
+  transition: all 0.3s ease-in-out;
+}
+.write-btn:hover {
+    /* background-color: #985b47; */
+    background-color: var(--button_hover_color);
 }
 .item {
   display:flex;

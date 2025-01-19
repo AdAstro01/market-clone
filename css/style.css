@@ -3,12 +3,18 @@
 @import "footer.css";
 @import "main.css";
 
+/* 색상에 변수 부어하기 */
+:root {
+  --button_color: rgb(250, 128, 114);
+  --button_hover_color: #985b47;
+}
+
 body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 .media-message {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -16,14 +22,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 1;
+  /* opacity: 1;  */
   background-color: salmon;  
 }
 
 /* 위와 순서 바뀌면 실행 안됨 */
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 500px) {
   .media-message {
-    opacity: 0;
-    /* display: none; */
+    /* opacity: 0; 보이지 않지만 덮고 있어 다른 클릭 안됨 */
+    display: none;
   }
 }

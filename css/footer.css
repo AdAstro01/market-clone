@@ -18,3 +18,13 @@ footer {
   cursor: pointer;
   /* 마우스 커서 - 손모양의 포인터로 변화 */
 }
+
+@keyframes footer-icon_floating {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+/* hover 위치, animation 효과 위치 다름 주의 */
+.footer-block:hover .footer-block__icon {
+  animation: footer-icon_floating 2s ease-in-out infinite;
+}
